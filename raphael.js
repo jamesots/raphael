@@ -2041,7 +2041,7 @@ window.Raphael = (function () {
                 return;
             }
             tear(this, this.paper);
-            this.node.parentNode.removeChild(this[0]);
+            this.node.parentNode.removeChild(this.node);
             this.Group.parentNode.removeChild(this.Group);
             this.shape && this.shape.parentNode.removeChild(this.shape);
             for (var i in this) {
